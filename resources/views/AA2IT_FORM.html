@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>EMPLOYEE DATA FORM</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap" rel="stylesheet">
+
+<style>
+        
+div
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body
+{
+    background-color: white; ;                           /*https://images.unsplash.com/photo-1622126807280-9b5b32b28e77?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container
+{
+    width:500px;
+    height: 650px;
+    opacity: 1;
+    background-color: #fffafa;       /*rgb(200, 207, 255)*/
+    border-radius: 5px;
+    position:relative;
+    margin: 5% auto;
+    transition: 1s;
+    overflow:hidden;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.2);
+}
+
+.logo
+{
+    background-repeat: no-repeat ;
+    float: left;
+    width: 80px;
+    height: 40px;
+    padding: 10px 0 0 -0;
+}
+
+/*.employee
+{
+    float:right;
+}*/
+
+h2
+{
+    text-align:center;
+    padding-top:5px;
+    font-size: 15px;
+    
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 3px;
+
+}
+
+.container form
+{
+    width:450px;
+    position:absolute;
+    top:30px;
+    bottom:30px;
+    left: 20px;
+    transition: 1s;
+    
+}
+
+
+.container h5
+{
+    text-align: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 25px;
+    letter-spacing: 5px;
+    color: red;
+}
+
+
+form input
+{
+    width:100%;
+    padding:10px 5px;
+    margin:5px 5px;
+    border:0;
+    border-bottom: 1px solid #999;
+    outline:none;
+    background:transparent;
+}
+
+.btn-box
+{
+    border:0 solid;
+    width:90px;
+    margin: 20px 0 0 175px;                          /*20px 0 0 173px*/
+}
+
+form button
+{
+    width:125px;
+    height:35px;
+    border-radius:50px;
+    margin:0 -5px;
+    background:linear-gradient(to right, #ff3131,#ff0000);        /*#DFA3FF,#B429FF*/
+    color:white;
+    border:0;
+    outline:none;
+    cursor:pointer;
+}
+
+#form2
+{
+    left:500px;
+
+}
+
+#form3
+{
+    left:500px;
+}
+
+#form4
+{
+    left:500px;
+}
+
+#form5
+{
+    left:500px;
+}
+
+.step-row
+{
+    width: 500px;
+    height: 40px;
+    margin: 0 0 0 -15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 -1px 5px -1px black;
+}
+
+.step-col
+{
+    width:120px;
+    text-align:center;
+    position: relative;
+}
+
+#progress
+{
+    position:absolute;
+    width: 95px;
+    height:40px;
+    background:linear-gradient(to right, #ff4433,#ff0000);
+    transition: 1s;
+}
+
+#progress::after
+{
+    content:'';
+    height:0;
+    width:0;
+    border-top:20px solid transparent;
+    border-bottom:20px solid transparent;
+    position:absolute;
+    right:-20px;
+    top:0;
+    border-left:20px solid #ff0000;
+}
+
+.container .ii
+{
+    width: 50%;
+}
+
+
+</style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><small>Step 1</small></div>
+            <div class="step-col"><small>Step 2</small></div>
+            <div class="step-col"><small>Step 3</small></div>
+            <div class="step-col"><small>Step 4</small></div>
+            <div class="step-col"><small>Step 5</small></div>
+        </div>
+
+        <div class="col-4"><img class="logo" src="C:\Users\xxx\Desktop\Files\a2it-removebg-preview.png" style="margin: -5px 0 0 -25px;"></div><br><br><br>
+
+        <div><h5>EMPLOYEE FORM</h5></div>
+
+        <form id="form1">
+        
+            <br><br><br><br><br><br>
+            <div><center><h2>PERSONAL DETAIL</h2></center></div>
+            <input type="text" placeholder="first name">
+            <input type="text" placeholder="father name">  
+            <input type="text" placeholder="mobile number">
+            <input type="gmail" placeholder="Email Address">
+            <input type="text" placeholder="Adhar card No.">
+            <input type="text" placeholder="job title">         
+            <div class="btn-box">
+                <button type="button" id="next1">NEXT</button>
+            </div>
+        </form>
+        <form id="form2">
+            
+            <br><br><br><br><br><br>
+            <center><h2>EMPLOYEE DETAIL</h2></center>
+            <input type="text" placeholder="date of joining">
+            <input type="text" placeholder="department">
+            <input type="text" placeholder="current address">
+            <input type="text" placeholder="permanent address"> 
+            <input type="text" placeholder="Nationality">
+            <div class="btn-box">
+            <button type="button" id="next2">NEXT</button>&nbsp;
+            <button type="button"id="back1">BACK</button>
+            </div>
+        </form>
+        <form id="form3">
+            
+            <br><br><br><br><br><br>
+            <center><h2>QUALIFICATION</h2></center>
+            <input type="text" placeholder="higher education">
+            <input type="text" placeholder="secondary education">
+            <input type="text" placeholder="graduation">
+            <input type="text" placeholder="other">
+            <input type="text" placeholder="other">
+            <div class="btn-box">
+            <button type="button" id="next3">NEXT</button>&nbsp;<button type="button"id="back2">BACK</button>
+            </div>
+        </form>
+        <form id="form4">
+            
+            <br><br><br><br><br><br>
+            <center><h2>TRAINING/EXPERIENCE</h2></center>
+            <input type="text" placeholder="Intitute 1">
+            <input type="text" placeholder="Institute 2">
+            <input type="text" placeholder="Company 1">
+            <input type="text" placeholder="Company 2">
+            <input type="text" placeholder="Company 3">
+            <div class="btn-box">
+                <div class="back3"></div>
+                <button type="button" id="next4">NEXT</button>&nbsp;<button type="button"id="back3">BACK</button>
+                
+            </div>
+        </form>
+        <form id="form5">
+            
+            <br><br><br><br><br><br>
+            <center><h2>CREATE AN ACCOUNT</h2></center>                                                 
+           
+            <ul style="list-style-type: none; margin: 0 0 0 -30px;">
+                <li>Add your Date of birth.</li>
+            </ul>
+            <input type="date" placeholder="Date-Of-Birth" class="ii" style="border: none;"><br><br>
+            <ul style="list-style-type: none; margin: 0 0 0 -30px;">
+                <li>Applicant photo, size of photo not more than 125kb</li>
+            </ul>
+            <input type="file" id="fl" name="fl" multiple style="border: none;">  
+            <ul style="list-style-type: none; margin: 0 0 0 -30px;">
+                <li>Applicant adharcard,size of adhar not more than 300kb</li>
+            </ul>
+            <input type="file" id="fl" name="fl" multiple style="border: none;">  
+            <div class="btn-box">
+                <button type="SUBMIT">SUBMIT</button>&nbsp;<button type="button" id="back4">BACK</button>
+                
+            </div>
+        </form>
+
+        <!--<form id="form2">
+            <center><h3>SOCIAL LINK</h3></center>
+            <input type="text" placeholder="facebook">
+            <input type="text" placeholder="twiter">
+            <input type="text" placeholder="instagram">
+            <div class="btn-box">
+                <div class="back3"></div>
+                <button type="button" id="next2">NEXT</button>
+                <button type="button"id="back1">BACK</button>
+            </div>
+        </form>-->
+        
+        <!--<div class="step-row">
+            <div id="progress"></div>
+            <div class="step-col"><small>Step 1</small></div>
+            <div class="step-col"><small>Step 2</small></div>
+            <div class="step-col"><small>Step 3</small></div>
+            <div class="step-col"><small>Step 4</small></div>
+            <div class="step-col"><small>Step 5</small></div>
+        </div>-->
+
+    </div>
+
+    <script>
+
+        var form1 = document.getElementById("form1");
+        var form2 = document.getElementById("form2");
+        var form3 = document.getElementById("form3");
+        var form4 = document.getElementById("form4");
+        var form5 = document.getElementById("form5");
+
+        var next1 = document.getElementById("next1");
+        var next2 = document.getElementById("next2");
+        var next3 = document.getElementById("next3");
+        var next4 = document.getElementById("next4");
+
+        var back1 = document.getElementById("back1");
+        var back2 = document.getElementById("back2");
+        var back3 = document.getElementById("back3");
+        var back4 = document.getElementById("back4");
+
+        var progress = document.getElementById("progress");
+
+        next1.onclick = function()
+        {
+            form1.style.left = "-500px";
+            form2.style.left = "20px";
+            progress.style.width ="190px"
+        }
+        back1.onclick = function()
+        {
+            form1.style.left = "20px";
+            form2.style.left = "500px";
+            progress.style.width ="90px"
+        }
+        next2.onclick = function()
+        {
+            form2.style.left = "-500px";
+            form3.style.left = "20px";
+            progress.style.width ="290px"
+        }
+        back2.onclick = function()
+        {
+            form2.style.left = "20px";
+            form3.style.left = "500px";
+            progress.style.width ="190px"
+        }
+        next3.onclick = function()
+        {
+            form3.style.left = "-500px";
+            form4.style.left = "20px";
+            progress.style.width ="390px"
+        }
+        back3.onclick = function()
+        {
+            form3.style.left = "20px";
+            form4.style.left = "500px";
+            progress.style.width ="290px"
+        }
+        next4.onclick = function()
+        {
+            form4.style.left = "-500px";
+            form5.style.left = "20px";
+            progress.style.width ="500px"
+        }
+        back4.onclick = function()
+        {
+            form4.style.left = "20px";
+            form5.style.left = "500px";
+            progress.style.width ="390px"
+        }
+
+    </script>
+
+</body>
+</html>

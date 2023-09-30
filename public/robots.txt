@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.a2itsoft.com/sitemap.xml
